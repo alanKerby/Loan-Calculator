@@ -9,7 +9,7 @@ parser.add_argument("-i", "--interest", type=float, help="Annual percentage rate
 parser.add_argument("-m", "--payment", type=float, help="Monthly payment? (decimal number)")
 
 args = parser.parse_args()
-type = args.type
+type_ = args.type
 principal = args.principal
 periods = args.periods
 interest = args.interest
@@ -77,5 +77,4 @@ def monthly_diff(principal, periods, interest):
     print(f"\nOverpayment = {round(abs(balance))}")
 
 
-parameter_check(type, principal, periods, interest, payment)
-
+parameter_check(type_, principal, periods, interest, payment)
